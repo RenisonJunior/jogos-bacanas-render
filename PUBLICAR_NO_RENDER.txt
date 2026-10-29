@@ -1,0 +1,20 @@
+JOGOS BACANAS — PUBLICAÇÃO PARA DEMONSTRAÇÃO NO RENDER
+
+Este pacote está preparado para publicação como Docker Web Service no Render.
+Requisitos do projeto: Java 17, Maven, Spring Boot, Thymeleaf e H2.
+
+IMPORTANTE SOBRE O BANCO:
+O banco H2 está configurado em memória para a demonstração. Os dados iniciais são recriados quando a aplicação inicia.
+Sugestões cadastradas durante a apresentação ficam disponíveis enquanto a aplicação estiver em execução, mas podem desaparecer se o serviço reiniciar ou dormir. Isso é esperado no plano gratuito do Render.
+
+PASSOS:
+1. Extraia este ZIP.
+2. Envie para um repositório GitHub o CONTEÚDO da pasta jogos-bacanas, não a pasta externa que contém tudo.
+3. Confirme que pom.xml e Dockerfile aparecem na raiz do repositório, junto com src/.
+4. No Render, selecione New + > Web Service e conecte o repositório.
+5. Selecione branch main, Runtime/Language Docker e plano Free.
+6. Deixe Root Directory vazio e Dockerfile Path como Dockerfile.
+7. Clique em Create Web Service / Deploy Web Service.
+8. Aguarde o deploy terminar e o estado ficar Live. Abra o endereço .onrender.com.
+
+Se o Render mostrar erro, abra Logs > Deploy Logs e Runtime Logs e copie a parte final do erro para obter ajuda.
